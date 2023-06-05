@@ -1,0 +1,98 @@
+* {
+ box-sizing: border-box;
+
+}
+
+h2, h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 0;
+    overflow-wrap: break-word;
+    padding-bottom: 30px;
+}
+
+
+.carousel-item {
+    width: 100%;
+}
+
+.hero-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 65% center;
+}
+
+.carousel-inner > .carousel-item:nth-child(1) .hero-image {
+    background-position: bottom 35% center;
+}
+
+#carouselExampleCaptions {
+    position: relative;
+}
+
+.carousel-title {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #475c6d3a;
+    width: 600px;
+}
+
+.carousel-title h1{
+    margin: 0;
+}
+
+.carousel-item > div {
+    height: 500px;
+}
+
+
+.jenga-row {
+    display: flex;
+}
+
+.jenga-image {
+    flex: 3;
+    background-image: url(https://www.farnhamcastle.com/wp-content/uploads/2022/03/Homepage-Weddings-1-e1648636047835.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 0.5rem solid #fff;    
+}
+
+.jenga-content {
+    flex: 2;
+    border-left: 0.5rem solid white;
+    border-top: 0.5rem solid #fff;
+    background-color: #475c6d;
+    color: white;
+    padding-top: 20px;
+}
+
+
+.jenga > .jenga-row:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.jenga > .jenga-row:nth-child(2n) .jenga-content {
+    border-right:0.5rem solid white;
+    border-left: none;
+}
+
+h1:first-child, h2:first-child {
+    margin-top: 0
+}
+
+.content p a {
+    color: white;
+}
+
+.jenga>.jenga-row:nth-child(2n) {
+    flex-direction: row-reverse;
+}
